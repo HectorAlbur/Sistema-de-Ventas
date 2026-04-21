@@ -1,0 +1,7 @@
+//Configuracion para que funcione en VisualStudio code
+
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar"
+    ]
+}

@@ -9,7 +9,6 @@ import java.util.List;
 
 public class ProductoDAO {
 
-    // Obtener todos los productos
     public List<Producto> obtenerTodos() {
         List<Producto> lista = new ArrayList<>();
         String sql = "SELECT * FROM productos ORDER BY nombre";
@@ -30,7 +29,7 @@ public class ProductoDAO {
             }
 
         } catch (SQLException e) {
-            System.out.println("❌ Error al obtener productos: " + e.getMessage());
+            System.out.println("Error al obtener los productos: " + e.getMessage());
         }
         return lista;
     }
@@ -49,7 +48,7 @@ public class ProductoDAO {
             return ps.executeUpdate() > 0;
 
         } catch (SQLException e) {
-            System.out.println("❌ Error al insertar producto: " + e.getMessage());
+            System.out.println("Error al insertar el producto: " + e.getMessage());
             return false;
         }
     }

@@ -48,7 +48,7 @@ public class ProductoController {
         boolean exito = dao.insertar(p);
 
         if (exito) {
-            return "El producto se guardo en la base de datos";
+            return "OK";
         } else {
             return "No se pudo guardar en la base de datos.";
         }
